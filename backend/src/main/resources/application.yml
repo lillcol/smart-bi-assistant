@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: smart-bi-assistant
+  profiles:
+    active: local
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+smartbi:
+  query:
+    default-limit: 1000
+    max-limit: 1000
+    timeout-seconds: 10
+    table-whitelist: []
+  ai:
+    minimax:
+      base-url: ${MINIMAX_BASE_URL:${ANTHROPIC_BASE_URL:https://api.minimaxi.com/anthropic}/v1/messages}
+      model: ${MINIMAX_MODEL:MiniMax-M2.7}
+    deepseek:
+      base-url: ${DEEPSEEK_BASE_URL:https://api.deepseek.com}
+      model: ${DEEPSEEK_MODEL:deepseek-chat}

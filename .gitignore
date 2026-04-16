@@ -1,0 +1,22 @@
+.idea/
+.DS_Store
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+
+# backend
+backend/target/
+.idea/
+target/
+*.iml
+
+# Sensitive local configs
+src/main/resources/application-local.yml
+.env
+*.pem
+*.key
+secrets/
+
+# OS
+.DS_Store

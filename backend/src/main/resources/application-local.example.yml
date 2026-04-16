@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/smart_bi?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: your_mysql_username
+    password: your_mysql_password
+
+smartbi:
+  ai:
+    minimax:
+      api-key: your_minimax_api_key
+    deepseek:
+      api-key: your_deepseek_api_key
