@@ -133,6 +133,16 @@ curl -X POST "http://localhost:8080/api/query" \
   -d '{"question":"最近7天GMV是多少"}'
 ```
 
+5. 前端联调（可选）：
+
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
+前端默认使用 Vite 代理：`/api -> http://localhost:8080`
+
 ---
 
 ## 9. 调试日志

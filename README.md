@@ -18,4 +18,9 @@
 ## 快速开始
 
 - 后端启动说明见：`backend/README.md`
+- 前端启动：
+  - `cd frontend`
+  - `npm install`
+  - `npm run dev`
+  - 默认通过 Vite 代理访问后端：`/api -> http://localhost:8080`
 
